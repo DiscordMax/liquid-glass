@@ -74,6 +74,11 @@
     		background-image: radial-gradient(circle, rgba(46, 169, 103,1) 0%, rgba(36,37,42,1) 72%);
     		border-bottom: 0px!important;
 	}
+	.HeroBack {
+    backdrop-filter: blur( 46px );
+    -webkit-backdrop-filter: blur( 46px );
+    background: radial-gradient(circle, rgba(225,45,45,1) 0%, rgba(36,37,42,1) 53%);
+	}
 		  .waves-effect.waves-brown .waves-ripple {
     		opacity: 0.90;!important;
   	  }
@@ -431,7 +436,7 @@ main2 {
     <header>
       
         <!-- Navbar -->
-        <nav data-aos="zoom-out" data-aos-delay="800" id="stickyNav" class="navbar navbar-expand">
+        <nav data-aos="zoom-out" data-aos-delay="800" class="navbar-sticky navbar navbar-expand">
 	<a style="cursor:auto;" href="https://reportbot.xyz/">		
 	 <svg class="discovery material-design-icon__svg" style="overflow:visible!important;" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
   		<image href="https://cdn.discordapp.com/attachments/718518892296929352/1092887109997707354/discotools-xyz-icon_11.png" width="42" height="42"></image>
@@ -470,7 +475,7 @@ main2 {
                           
     </header>
      <!-- START OF PAGE -->
-                           <div class="Hero">
+                           <div class="Hero HeroBack">
                         <div class="HeroInner">
                             <main-text style="padding: 20px 0 5px 0;">Empowering your Discord Community</main-text> 
                                     <main-text style="padding: 0 0 10px 0;">through Reports</main-text>
