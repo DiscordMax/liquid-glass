@@ -1454,7 +1454,7 @@ p-main {
     }
 }
 
-.maventest {
+.reporttest {
     margin-right: 16px;
     min-width: 250px;
 }
@@ -1687,15 +1687,6 @@ body {
     cursor: pointer;
 }
 
-.jisaeE {
-    background-size: 30px;
-    background-image: url(https://cdn.discordapp.com/avatars/${user.discordId}/${user.avatar}.png);
-    width: 30px;
-    height: 30px;
-    min-height: 30px;
-    min-width: 30px;
-    border-radius: 50%;
-}
 
 .jErOKF {
     margin-inline-start: 10px;
