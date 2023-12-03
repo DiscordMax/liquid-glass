@@ -1029,8 +1029,8 @@ ul {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-    padding-top: 11rem;
-    padding-bottom: 5rem;
+    padding-top: 13rem;
+    padding-bottom: 8rem;
 }
 @media (max-width: 380px) {
     .Hero {
