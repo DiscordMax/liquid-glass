@@ -215,8 +215,8 @@ background: rgb(36, 37, 42)!important
     width: 100%;
 }
 .py-16 {
-    padding-top: 6rem!important;
-    padding-bottom: 6rem!important;
+    padding-top: 10rem!important;
+    padding-bottom: 8rem!important;
 }
 
 @media (min-width: 1024px) {
