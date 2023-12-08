@@ -171,7 +171,7 @@ background: rgb(36, 37, 42)!important
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #2585FF!important;
+  background-color: #E12D2D!important;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -2145,6 +2145,7 @@ html[dir="ltr"] .kzhQvQ {
 .crojIh {
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
+        margin-bottom: 18px;
 }
                 .hoRgHK {
                     position: relative;
