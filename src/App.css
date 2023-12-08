@@ -2131,16 +2131,21 @@ html[dir="ltr"] .kzhQvQ {
                 }
                 
                 .crojIh {
-                    position: relative;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    -webkit-box-pack: center;
-                    justify-content: center;
-                    background-color: rgb(36, 37, 42);
-                    transition: all 0.15s ease-in-out 0s;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 65px;
+    -webkit-box-pack: center;
+    border-bottom-left-radius: 65px;
+    justify-content: center;
+    transition: all 0.15s ease-in-out 0s;
                 }
-                
+                @media (max-width: 693px)
+.crojIh {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
                 .hoRgHK {
                     position: relative;
                     flex-direction: row;
@@ -2164,7 +2169,7 @@ html[dir="ltr"] .kzhQvQ {
                 }
                 
                 doc-yhe {
-                    opacity: 0.48;
+                    opacity: 0.79;
                     font-weight: 400;
                     font-size: 16px;
                     color: #fff;
@@ -2174,7 +2179,7 @@ html[dir="ltr"] .kzhQvQ {
                 }
                 
                 doc-yeh {
-                    opacity: 0.48;
+                    opacity: 0.79;
                     font-weight: 400;
                     color: #fff;
                     text-align: start;
