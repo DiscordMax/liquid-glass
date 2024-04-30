@@ -1,53 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head>  
+<head>    
+<title>Home - Report Bot</title>
+<link rel="shortcut icon" type="image/x-icon"  href="assets/image/reportbot.png" />	
 <div>
             <div>
-              <meta charset="utf-8" />
-            <link rel="shortcut icon" href="/favicon.ico" />
+              <meta charset="utf-8" /> 
                 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
-                <div>
-                    <title>404 - Maven</title>
-                </div>
+                <meta name="theme-color" content="#2B2D31" />
+
                 <div>
                     <link rel="stylesheet" type="text/css" href="src/App.css" />
                 </div>
     <meta charset="windows-1252" />
-                            <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/vendor/icons.min.css">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/vendor/animation.min.css">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="theme-color" content="#2585FF" />
-    <meta property="og:type" content="dashboard" />
-    <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" content="Maven Website">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2585FF">
+    <meta name="msapplication-navbutton-color" content="#2585FF">
+    <meta name="theme-color" content="#2B2D31">
+    <meta property="og:type" content="dashboard reportbot reports discord" />
+    <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" content="Report Bot">
     <meta property="og:author" content="Max Development" />
-    <meta property="og:title" content="404 | Maven Website" />
-    <meta property="og:description" content="404! You look lost, go back home." />
-    <meta property="og:url" content="https://mavenbot.xyz/404" />
-    <meta property="og:image" content="https://cdn.discordapp.com/avatars/709501397481029690/8c12f9c649cd6e4fea1715197b910534.png" />
+    <meta property="og:title" content="Report Bot" />
+    <meta name="description" content="Empowering your Discord Community through Reports!">
+    <meta property="og:description" content="Empowering your Discord Community through Reports" />
+    <meta property="og:url" content="https://reportbot.xyz/" />
+    <meta property="og:image" content="assets/image/reportbot.png" />
     <meta property="og:image:width" content="307" />
     <meta property="og:image:height" content="307" />
     <meta property="og:locale" content="en_US" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-                 <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
-           
-                        
-    <link rel="shortcut icon" href="src/logo.svg" />
-    <link rel="apple-touch-icon" href="src/logo.svg" />
-    <link rel="apple-touch-icon" sizes="72x72" href="src/logo.svg" />
-    <link rel="apple-touch-icon" sizes="114x114" href="src/logo.svg" />
-
-                  </head>
-            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		    
+    <link rel="shortcut icon" href="assets/image/reportbot.png" />
+    <link rel="apple-touch-icon" href="assets/image/reportbot.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/image/reportbot.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/image/reportbot.png" />
 <style>
-	.waves-effect.waves-brown .waves-ripple {
+	.report-radial {
+		box-shadow: 0px -32px 52px -11px rgba(0,0,0,0.49);
+		background: rgb(23,24,27);
+    		border-top-left-radius: 65px;
+    		backdrop-filter: blur(46px)!important;
+		border-top-right-radius: 65px;
+		background-image: radial-gradient(circle, rgba(23,24,27,1) 26%, rgba(36,37,42,1) 88%);
+    		border-bottom: 0px!important;
+	}
+	.report-radial2 {
+		box-shadow: 0px -32px 52px -11px rgba(0,0,0,0.49);
+		background: transparent;
+    		border-top-left-radius: 65px;
+    		backdrop-filter: blur(46px)!important;
+		border-top-right-radius: 65px;
+		background-image: radial-gradient(circle, rgba(225,45,45,1) 0%, rgba(36,37,42,1) 72%);
+		border-bottom: 0px!important;
+	}
+	.report-radial3 {
+		box-shadow: 0px -32px 52px -11px rgba(0,0,0,0.49);
+    		background: transparent;
+    		border-top-left-radius: 65px;
+    		backdrop-filter: blur(46px)!important;
+    		border-top-right-radius: 65px;
+    		background-image: radial-gradient(circle, rgba(46, 169, 103,1) 0%, rgba(36,37,42,1) 72%);
+    		border-bottom: 0px!important;
+	}
+@media (max-width: 693px) {
+	.report-radial {
+		border-top-left-radius: 35px;
+		border-top-right-radius: 35px;
+	}
+}
+@media (max-width: 693px) {
+	.report-radial3 {
+		background-image: radial-gradient(circle, rgba(46, 169, 103,1) 0%, rgba(36,37,42,1) 54%);   
+		border-top-left-radius: 35px;
+		border-top-right-radius: 35px;
+	}
+}
+@media (max-width: 693px) {
+	.report-radial2 {
+		background-image: radial-gradient(circle, rgba(225,45,45,1) 0%, rgba(36,37,42,1) 54%);
+		border-top-left-radius: 35px;
+		border-top-right-radius: 35px;
+	}
+}
+	.HeroBack {
+    backdrop-filter: blur( 46px );
+    -webkit-backdrop-filter: blur( 46px );
+    background: linear-gradient(199deg, rgba(225,45,45,1) 0%, rgba(36,37,42,1) 53%)
+	}
+		  .waves-effect.waves-brown .waves-ripple {
     		opacity: 0.90;!important;
   	  }
 		  .waves-effect.waves-green .waves-ripple {
@@ -65,8 +117,8 @@
     -webkit-tap-highlight-color: transparent;
     vertical-align: middle;
     z-index: 1;
-    -webkit-transition: .3s ease-out;
-    transition: .3s ease-out;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
 }
 .waves-ripple{position:absolute;border-radius:50%;width:20px;height:20px;margin-top:-10px;margin-left:-10px;opacity:0;background:rgba(0,0,0,0.2);-webkit-transition:all 0.7s ease-out;transition:all 0.7s ease-out;-webkit-transition-property:opacity, -webkit-transform;transition-property:opacity, -webkit-transform;transition-property:transform, opacity;transition-property:transform, opacity, -webkit-transform;-webkit-transform:scale(0);transform:scale(0);pointer-events:none}.waves-effect.waves-light .waves-ripple{background-color:rgba(255,255,255,0.45)}.waves-effect.waves-red .waves-ripple{background-color:rgba(244,67,54,0.7)}.waves-effect.waves-yellow .waves-ripple{background-color:rgba(255,235,59,0.7)}.waves-effect.waves-orange .waves-ripple{background-color:rgba(255,152,0,0.7)}.waves-effect.waves-purple .waves-ripple{background-color:rgba(156,39,176,0.7)}.waves-effect.waves-teal .waves-ripple{background-color:rgba(0,150,136,0.7)}.waves-effect input[type="button"],.waves-effect input[type="reset"],.waves-effect input[type="submit"]{border:0;font-style:normal;font-size:inherit;text-transform:inherit;background:none}.waves-effect img{position:relative;z-index:-1}.waves-notransition{-webkit-transition:none !important;transition:none !important}.waves-circle{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-mask-image:-webkit-radial-gradient(circle, white 100%, black 100%)}.waves-input-wrapper{border-radius:0.2em;vertical-align:bottom}.waves-input-wrapper .waves-button-input{position:relative;top:0;left:0;z-index:1}.waves-circle{text-align:center;width:2.5em;height:2.5em;line-height:2.5em;border-radius:50%;-webkit-mask-image:none}.waves-block{display:block}.waves-effect .waves-ripple{z-index:-1}
 	
@@ -86,12 +138,43 @@
     color: var(--primary-t-color);
     background-color: white;
 }
+.addReport {
+    color: #fff;
+    font-size: 3.79rem!important;
+    line-height: 4rem!important;
+}
+@media (max-width: 612px) {
+  .addReport {
+    color: #fff;
+    font-size: 3.59rem!important;
+    line-height: 4rem!important;
+            }
+}
+g {
+    filter: drop-shadow(0 4px 8px rgb(0 0 0 / 0.4));
+}	
+  .addReport2 {
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 612px) {
+  .addReport2 {
+    margin-top: 2rem;
+    margin-left: .75rem;
+    margin-right: .75rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+            }
+addReport{	
+    background-image: linear-gradient(to left, #2585FF 20.66%, #ffffff 92.31%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;	
+	}	
   i.newr {
     position: absolute;
     top: 38px;
     right: 40px;
     margin: -8px;
-    
     line-height: 0;
     font-size: 27px;
     cursor: pointer;
@@ -101,7 +184,7 @@
     background-color: white;
 }
             .navbar {
-    padding: 0.7rem 0rem 0px 124px!important;
+    padding: 0.7rem 0rem 0.7rem 34px!important;
             }
 .container {
     width: 100%;
@@ -124,11 +207,37 @@
     color: #FFF!important;
   }
             .navbar .container, .navbar .container-fluid, .navbar .container-lg, .navbar .container-md, .navbar .container-sm, .navbar .container-xl {
-    display: contents!important;
+    display: flex!important;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
             }
   .webNav:hover {
             opacity: 0.7;
         }
+            @media (max-width: 970px) {
+.cJkLrKJ {
+            display: flex!important;
+            }
+}
+            @media (min-width: 693px) {
+.mobileImage {
+            display: none!important;
+            }
+}
+            @media (max-width: 693px) {
+.webImage {
+            display: none!important;
+            }
+}
+              @media (max-width: 693px) {
+.paddingMobile {
+    	padding: 6rem 1.5rem 6rem 1.5rem!important;
+            }
+}
   .linkActive-nav {
     background: transparent!important;
     background: var(--off-white);
@@ -136,25 +245,29 @@
     color: var(--text-link);
     border-radius: 8px;
   }
-  .spacer-1 {
+.spacer-1 {
     width: 100%;
-    height: 1px;
+    height: 0px;
     opacity: 0.6;
     background: transparent;
-    margin-top: 49px;
-    margin-bottom: 35px;
+    /* margin-bottom: 1px; */
+    margin-top: 2rem;
 }
   .modal-body {
-  padding: 1rem;
+  padding: 86px 0px 25px 0px!important;
 }
+	.modal-body {
+    display: block!important;
+	}
   .modal-dialog {
     position: relative;
     width: auto;
     margin: 0rem!important; 
     pointer-events: none;
 }
-            @media (min-width: 576px) {
-.modal-dialog {
+	
+@media (min-width: 576px) {
+ .modal-dialog {
     max-width: initial!important; 
     margin: 1.75rem auto;
 }
@@ -174,39 +287,170 @@
   @media (max-width: 767px){
 .forButtons {
     margin-top: 31px;
-  }
-  }
+   }
+}
   @media (max-width: 767px) {
 .column {
     width: 0%!important;
-  }
-  }
-            .spacingLike {
-            margin-bottom: 7px;
+   }
+}
+              @media (max-width: 970px) {
+            .button3 {
+    	            padding: 16px 110px!important;
+                        margin-right: 0px!important;
+             }
             }
-            .styleIcon {
-            
-    color: rgb(23, 24, 27)!important;
-    margin-left: 6px;
-    margin-right: 11px;
-    font-size: 16px;
-
-            }
-            
-            .menu-header {
-                padding-bottom: 1rem;
-            border-bottom: 1px solid rgb(255, 255, 255, 0.6);
-    align-items: center;
+.spacingLike {
+	margin-bottom: 7px;
+}
+.styleIcon {
+   color: rgb(23, 24, 27)!important;
+   margin-left: 6px;
+   margin-right: 11px;
+   font-size: 16px;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.row {
+    display: -ms-flexbox;
     display: flex;
-    margin-bottom: .5rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row nowrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 8rem;
+    padding-right: 2rem;
+    padding-right: 2rem;
+}
+.flex2 {
+    display: flex;
+    justify-content: flex-end;
+}	
+.verifiedHome {     
+    font-size: 0.96rem!important;
+    line-height: 1.75rem!important;
+    background: rgb(225, 45, 45, 0.16);
+    border: #E12D2D solid;
+    border-color: #E12D2D;	
+    opacity: 1;
+    border-radius: 50px!important;
+    padding-top: 0.3rem!important;
+    padding-bottom: 0.3rem!important;
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+}
+.home3 {
+    padding-top: 11rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 10rem;
+}
+.home1 {
+    padding-top: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 7rem;
+}
+.home2 {
+    padding-top: 7rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 7rem;
+}
+.home4 {
+    padding-top: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 8rem;
+}
+	.imgHomeAuto {
+                        max-width: 100%;height: auto;
             }
-    .sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+            @media (max-width: 1208px) {
+            .imgHomeAuto {
+                        max-width: 100%;height: auto;
+             }
+            }
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+main2 {
+  background-image: linear-gradient(to left, #2585FF 20.66%, #ffffff 92.31%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
   </style>
 </head>
@@ -216,35 +460,27 @@
     <header>
       
         <!-- Navbar -->
-        <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand sticky">
+        <nav data-aos="zoom-out" data-aos-delay="800" class="navbar-sticky navbar navbar-expand">
+	<a style="cursor:auto;" href="https://reportbot.xyz/">		
+	 <svg class="discovery material-design-icon__svg" style="overflow:visible!important;" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
+  		<image href="assets/image/report_logo.png" width="42" height="42"></image>
+	 </svg>
+	</a>	
             <div class="container header">
                 <!-- Navbar Items -->
                 <ul class="navbar-nav items ml-auto">
                     <li class="nav-item">
-                        <a href="https://mavenbot.xyz/" class="nav-link smooth-anchor linkActive-nav activeWH">Home</a>
+                        <a href="https://reportbot.xyz/" class="nav-link smooth-anchor linkActive-nav activeWH">Home</a>
+                    </li>
+        	    <li class="nav-item">
+                        <a href="https://reportbot.xyz/status" target="_blank" class="nav-link smooth-anchor webNav">Status</a>
+                    </li>
+		    <li class="nav-item">
+                        <a href="https://reportbot.xyz/vote" target="_blank" class="nav-link smooth-anchor webNav">Upvote</a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://docs.mavenbot.xyz/scrims" class="nav-link smooth-anchor webNav">Scrims</a>
+                        <a href="https://reportbot.xyz/support" class="nav-link smooth-anchor webNav">Support</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="https://docs.mavenbot.xyz/configs" class="nav-link smooth-anchor webNav">Configuration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href"https://docs.mavenbot.xyz/manage" class="nav-link smooth-anchor webNav">Management</a>
-                    </li>
-                              <li class="nav-item">
-                        <a href"https://docs.mavenbot.xyz/admin" class="nav-link smooth-anchor webNav">Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href"https://docs.mavenbot.xyz/modmail" class="nav-link smooth-anchor webNav">Modmail</a>
-                    </li>
-                              <li class="nav-item">
-                        <a href="https://docs.mavenbot.xyz/" class="nav-link smooth-anchor webNav">Docs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://discord.com/invite/QF6e769AGv" target="_blank" class="nav-link smooth-anchor webNav">Support Server</a>
-                    </li>
-                </ul>
                 <!-- Navbar Icons -->
                 <ul class="navbar-nav icons ml-auto m-xl-0">
                 </ul>
@@ -253,36 +489,35 @@
                 <ul class="navbar-nav toggle">
                     <li class="nav-item1">
                         <div class="nav-link" data-toggle="modal" data-target="#menu">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-role="button" class="m9d8o3-0 hMfVQI elzld3-3 hjMxNP" main="#9B9D9F">
-                                    <path d="M7.283 19H20m0-7H4m16-7h-7.028" stroke="#9B9D9F" data-stroke="main" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-role="button" class="m9d8o3-0 hMfVQI elzld3-3 hjMxNP" main="#ffffff">
+                                    <path d="M7.283 19H20m0-7H4m16-7h-7.028" stroke="#fff" data-stroke="main" stroke-width="1.5" style="stroke:#fff" stroke-linecap="round"></path></svg>
                                 </div>
                     </li>
                 </ul>
             </div>
-                   <button class="sc-1x57bl6-0 bhiRrt" color="#2585FF">
-                                        <i class="fas fa-sign-in-alt styleIcon1"></i>Login
-                                        </button>
         </nav>
                           
     </header>
      <!-- START OF PAGE -->
-                        <div class="Hero">
+                           <div class="Hero HeroBack">
                         <div class="HeroInner">
-                            <main-text>404!</main-text>
-                            <p-main>404! You look lost, click below to go back home.</p-main>
+                            <main-text style="padding: 20px 0 15px 0;">404 - This Page does not exist</main-text> 
+                            <p-main>You look lost! Click below to go back home.</p-main>
                             <div class="HeroButtons">
                             <div class="HeroButtonWrapper">
-                                <a class="buttona" href="https://mavenbot.xyz/">
-                            <button3 class="button3 waves-effect waves-brown">Go to Home</button3></a>
+                                <a class="buttona" target="_blank" href="https://reportbot.xyz/invite">
+                            <button3 class="button3 waves-effect waves-brown">Add to Server</button3></a>
                             </div>
                             <div class="HeroButtonWrapper">
-                                <a class="buttona" href="http://docs.mavenbot.xyz/">
-                            <button4 class="button4 waves-effect waves-brown">Learn More</button4></a>
+                                <a class="buttona" target="_blank" href="https://reportbot.xyz/vote">
+                            <button4 class="button4 waves-effect waves-brown">Upvote Report Bot</button4></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            
+            
             <!-- Modal [responsive menu] -->
     <div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
         <div class="modal-dialog modal-dialog-slideout" role="document">
@@ -290,18 +525,11 @@
               <style>
                 .closeIcon-2dbyjK {
     width: 24px;    
-                            
     background-color: rgb(23, 24, 27)!important;
 
     height: 24px;
     color: rgb(255, 255, 255);
                 }
-                          .theIcon{
-    height: 42px;
-}
-                          .theIcon1{
-    height: 42px;
-}
                   .link-3XMvoR {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -313,6 +541,16 @@
     color: rgb(255, 255, 255)!important;
     color: var(--not-quite-black);
 }
+                          .link-3XMvoR:active {
+    background: rgb(36, 37, 42)!important;
+    border-radius: 4px;
+                          }
+		      .textSmall-2bq_Bu:hover {
+	                text-decoration: underline;
+                          }
+                  .link-3XMvoR {
+	                text-decoration: underline;
+                          }
                   .textSmall-2bq_Bu {
     font-size: 16px;
     line-height: 24px;
@@ -326,12 +564,22 @@
                           .loginButton {
     background: white!important;
     background: var(--off-white);
-    color: rgb(23, 24, 27)!important;
-    cursor: not-allowed;
-    border-radius: 28px;
+color: rgb(23, 24, 27)!important;
+                                      cursor: not-allowed;
+                                      border-radius: 28px;
     text-align: center!important;
                           }
-                          header-menu-h3 {
+                          .menu-header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.6);
+    align-items: center;
+    display: flex;
+    margin-bottom: .5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row nowrap;
+    }
+		      header-menu-h3 {
                                                 font: 900 1.5em 'Poppins', Helvetica, arial, sans-serif;
                                       color: white;
                                       margin-left: .5rem;
@@ -428,7 +676,7 @@ a {
     display: flex;
     width: 330px;
 }
-                          .menu-footer .button {
+                          .menu-footer .buttonNav {
     margin: 6px 8px;
     padding: 12px 22px;
     border-radius: 5px;
@@ -442,29 +690,30 @@ a {
     -webkit-transition: background-color .2s;
     transition: background-color .2s;
 }
-                          .menu-footer .button {
+                          .menu-footer .buttonNav {
     -webkit-box-flex: 1;
     flex: auto 1 1;
     text-align: center;
     font-weight: 700;
 }
-         .button.new-style {
+         .buttonNav.new-style {
     padding: 1rem 2rem;
     border-radius: 99px;
     color: #fff;
 }
-          .button.default {
+          .buttonNav.default {
     background-color: #2585FF;
     color: white;
-}                
+}              
+                
               </style>
-          
-                         <div class="menu-header">
+              
+                 <div class="menu-header">
                                           <div class="flex11">
                       <span data-v-131e8161="" aria-hidden="true" aria-label="Compass" role="img" class="theIcon">
                                   <i width="42" height="42" viewBox="0 0 24 24" class="fas fa-compass discovery material-design-icon__svg" style="font-size: 42px;"></i>
                               </span>
-                              <header-menu-h3>Maven</header-menu-h3>
+                              <header-menu-h3>Report Bot</header-menu-h3>
                               </div>
                               <div style="flex: 1 1 auto;"></div>
                                           <buttonNav data-dismiss="modal">
@@ -477,17 +726,10 @@ a {
                                           </buttonNav>
                               </div>
                         <div class="menu-main">
-                        <a href="https://mavenbot.xyz/" class="nuxt-link-active waves-effect waves-green">Home</a>
-			<a href="https://docs.mavenbot.xyz/" class="nuxt-link-active waves-effect waves-green">View Commands</a>	
-                        <a href="https://mavenbot.xyz/support" target="_blank" class="nuxt-link-active waves-effect waves-green">Support Server</a>
-                        <div class="sep"></div>
-			<a href="https://docs.mavenbot.xyz/scrims" class="nuxt-link-active waves-effect waves-green">Scrims</a>	
-                        <a href="https://docs.mavenbot.xyz/configs" class="nuxt-link-active waves-effect waves-green">Configs</a>
-                        <a href="https://docs.mavenbot.xyz/manage" class="nuxt-link-active waves-effect waves-green">Management</a>
-                        <a href="https://docs.mavenbot.xyz/admin" class="nuxt-link-active waves-effect waves-green">Admin</a>
-                        <div class="sep"></div>
-                        <a href="https://mavenbot.xyz/status" target="_blank" class="nuxt-link-active waves-effect waves-green">Bot Status</a>	
-                        <a href="https://mavenbot.xyz/terms" class="nuxt-link-active waves-effect waves-green">Maven Terms</a>
+                        <a href="https://reportbot.xyz/" class="nuxt-link-active waves-effect waves-green">Home</a>
+                        <a href="https://reportbot.xyz/support" target="_blank" class="nuxt-link-active waves-effect waves-green">Support Server</a>
+                        <a href="https://reportbot.xyz/privacy" target="_blank" class="nuxt-link-active waves-effect waves-green">Report Bot Privacy</a>	
+                        <a href="https://reportbot.xyz/terms" class="nuxt-link-active waves-effect waves-green">Report Bot Terms</a>
                         <div class="sep"></div>
                           
                                     <div class="socials">
@@ -495,30 +737,25 @@ a {
                                                 <span data-v-0ef2dcc0="" aria-label="Twitter icon" role="img" class="material-design-icon twitter-icon waves-effect waves-green">
                                                                       <i width="20" height="20" viewBox="0 0 24 24" class="fab fa-twitter material-design-icon__svg"></i>
                                                             </span></a>
-                                       
-                                                <a href="https://twitch.tv/DiscordMax" target="_blank" title="Twitch account">
-                                                            <span data-v-0ef2dcc0="" aria-label="Twitch icon" role="img" class="material-design-icon twitch-icon waves-effect waves-green">
-                                                                   <i width="20" height="20" viewBox="0 0 24 24" class="fab fa-twitch material-design-icon__svg"></i>
-                                                                                    </span></a>
                                                 
-                                                <a data-v-0ef2dcc0="" href="https://mavenbot.xyz/support" target="_blank" title="Discord server">
+                                                <a data-v-0ef2dcc0="" href="https://reportbot.xyz/support" target="_blank" title="Discord server">
                                                             <span aria-label="Discord icon" role="img" class="material-design-icon discord-icon waves-effect waves-green">
                                                                                     <i width="20" height="20" viewBox="0 0 24 24" class="fab fa-discord material-design-icon__svg"></i>
                                                                                  </span></a>
                                                 
-                                                <a data-v-0ef2dcc0="" href="https://github.com/MavenBot" target="_blank" title="GitHub organization">
+                                                <a data-v-0ef2dcc0="" href="https://github.com/Discord-Report-Bot" target="_blank" title="GitHub organization">
                                                             <span data-v-0ef2dcc0="" aria-label="Github Circle icon" role="img" class="material-design-icon github-circle-icon waves-effect waves-green">
                                                                                <i width="20" height="20" viewBox="0 0 24 24" class="fab fa-github material-design-icon__svg"></i>
                                                                                     </span></a>
                                                 
-                                                <a data-v-0ef2dcc0="" href="https://mavenbot.xyz/invite" target="_blank" title="Invite Bot">
+                                                <a data-v-0ef2dcc0="" href="https://reportbot.xyz/invite" target="_blank" title="Invite Bot">
                                                             <span aria-label="Invite Bot icon" role="img" class="material-design-icon discord-icon waves-effect waves-green">
                                                                                     <i width="20" height="20" viewBox="0 0 24 24" class="fas fa-robot material-design-icon__svg"></i>
                                                                                  </span></a>
                                     </div>
                         </div>
-                                                </nav>
-                                    </div>
+		 </nav>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -528,12 +765,69 @@ a {
         <!-- ==============================================
         Vendor Scripts
         =============================================== -->
+<script>
+const scrollElements = document.querySelectorAll(".js-scroll");
+
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
+};
+
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add("scrolled");
+};
+
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+      displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+      hideScrollElement(el)
+    }
+  })
+}
+
+window.addEventListener("scroll", () => { 
+  handleScrollAnimation();
+});
+</script>
+<script>
+//Get the button
+var navsticky = document.getElementById("stickyNav");
+
+// When the user scrolls down 3px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 3 || document.documentElement.scrollTop > 3) {
+    navsticky.classList.add("navbar-sticky");
+  } else {
+    navsticky.classList.remove("navbar-sticky");
+  }
+}	
+</script>
     <script src="assets/js/vendor/jquery.min.js"></script>
     <script src="assets/js/vendor/jquery.easing.min.js"></script>
     <script src="assets/js/vendor/ponyfill.min.js"></script>
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
-                <script src="src/index.js"></script>
+    <script src="src/index.js"></script>
     <script src="assets/js/vendor/animation.min.js"></script>
     <script src="../kit.fontawesome.com/86323babb4.js" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
