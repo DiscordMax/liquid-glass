@@ -252,17 +252,16 @@ addReport{
 }
 
 .glow-container::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 110%; /* Slightly larger than image */
-  height: 110%;
-  border-radius: 50%;
-  background: transparent;
-  box-shadow: 0 0 40px rgba(226, 45, 45, 0.5); /* Adjust blur radius here */
-  z-index: -1;
+content: '';
+    position: absolute;
+    top: 40%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    width: 81%;
+    height: 72%;
+    border-radius: 50%;
+    background: transparent;
+    z-index: -1;
 }
 
 .glow-image {
@@ -292,10 +291,9 @@ addReport{
     margin: 1.75rem auto;
 }
 	.glow-container::before {
-  box-shadow: 
-    0 0 20px rgba(226, 45, 45, 0.8),
-    0 0 40px rgba(226, 45, 45, 0.5),
-    0 0 60px rgba(226, 45, 45, 0.3);
+        box-shadow: 0 0 250px rgba(226, 45, 45, 0.8), 
+		    0 0 250px rgba(226, 45, 45, 0.5), 
+		    0 0 250px rgba(226, 45, 45, 0.3);
 }
 	.glow-container::before {
   mix-blend-mode: screen; /* Or 'multiply' depending on background */
