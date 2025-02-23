@@ -259,6 +259,23 @@ addReport{
     /* margin-bottom: 1px; */
     margin-top: 2rem;
 }
+		.glow-container2 {
+  position: relative;
+  display: inline-block;
+}
+
+.glow-container2::before {
+content: '';
+    position: absolute;
+    top: 40%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    width: 81%;
+    height: 72%;
+    border-radius: 50%;
+    background: transparent;
+    z-index: -1;
+}
 	.glow-container {
   position: relative;
   display: inline-block;
@@ -309,6 +326,14 @@ content: '';
 		    0 0 250px rgba(226, 45, 45, 0.3);
 }
 	.glow-container::before {
+  mix-blend-mode: screen; /* Or 'multiply' depending on background */
+}
+		.glow-container2::before {
+        box-shadow: 0 0 250px rgba(53, 120, 229, 0.8), 
+		    0 0 250px rgba(53, 120, 229, 0.5), 
+		    0 0 250px rgba(53, 120, 229, 0.3);
+}
+	.glow-container2::before {
   mix-blend-mode: screen; /* Or 'multiply' depending on background */
 }
             }
@@ -670,7 +695,8 @@ Allow your server members to assist moderators by report suspicious, questionabl
 						 <div class="scroll-element js-scroll fade-in-bottom">
                                         <div data-v-1b68bfcc="" class="grid gap-8 sm:gap-16 xl:gap-24 sm:grid-cols-2 max-w-screen-xl" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
                                                     <div data-v-1b68bfcc="" class="illustration flex items-center" style="margin-right: 5rem;">
-                                                                <img data-v-1b68bfcc="" src="assets/image/report_tickets.png" alt="Ticket System Embed" class="imgHomeAuto"></img> 
+							    												<div class="glow-container2">
+                                                                <img data-v-1b68bfcc="" src="assets/image/report_tickets.png" alt="Ticket System Embed" class="imgHomeAuto"></img></div> 
                                         </div>
                             
                             <div class="flex flex-col sm:justify-center mt-12 sm:mt-0 relative" style="margin-left: 2rem;" data-v-1b68bfcc="">
