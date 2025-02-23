@@ -246,6 +246,33 @@ addReport{
     /* margin-bottom: 1px; */
     margin-top: 2rem;
 }
+	.glow-container {
+  position: relative;
+  display: inline-block;
+}
+
+.glow-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%; /* Slightly larger than image */
+  height: 110%;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 0 40px rgba(226, 45, 45, 0.5); /* Adjust blur radius here */
+  z-index: -1;
+}
+
+.glow-image {
+  display: block;
+  position: relative;
+  width: 300px; /* Set your image size */
+  height: 300px;
+  border-radius: 50%; /* Makes image circular */
+  object-fit: cover;
+}
   .modal-body {
   padding: 86px 0px 25px 0px!important;
 }
@@ -263,6 +290,15 @@ addReport{
  .modal-dialog {
     max-width: initial!important; 
     margin: 1.75rem auto;
+}
+	.glow-container::before {
+  box-shadow: 
+    0 0 20px rgba(226, 45, 45, 0.8),
+    0 0 40px rgba(226, 45, 45, 0.5),
+    0 0 60px rgba(226, 45, 45, 0.3);
+}
+	.glow-container::before {
+  mix-blend-mode: screen; /* Or 'multiply' depending on background */
 }
             }
             body {
@@ -572,7 +608,8 @@ main2 {
 				 <div class="mobileImage">
                                                                             <div data-v-1b68bfcc="" class="grid gap-8 sm:gap-16 xl:gap-24 sm:grid-cols-2 max-w-screen-xl" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
                                         <div class="illustration flex items-center" data-v-1b68bfcc>
-                                                                <img  src="assets/image/report_embed.png" alt="Report Panel Embed" class="imgHomeAuto"></img> 
+						<div class="glow-container">
+                                                                <img  src="assets/image/report_embed.png" alt="Report Panel Embed" class="imgHomeAuto"></img></div>
                                         </div>
                             </div>
             </div>
