@@ -263,7 +263,23 @@ content: '';
     background: transparent;
     z-index: -1;
 }
+	.glow-container3 {
+  position: relative;
+  display: inline-block;
+}
 
+.glow-container3::before {
+content: '';
+    position: absolute;
+    top: 40%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    width: 81%;
+    height: 72%;
+    border-radius: 50%;
+    background: transparent;
+    z-index: -1;
+}
 .glow-image {
   display: block;
   position: relative;
@@ -304,6 +320,14 @@ content: '';
 		    0 0 250px rgba(53, 120, 229, 0.3);
 }
 	.glow-container2::before {
+  mix-blend-mode: screen; /* Or 'multiply' depending on background */
+}
+			.glow-container3::before {
+        box-shadow: 0 0 250px rgba(46, 169, 103, 0.8), 
+		    0 0 250px rgba(46, 169, 103, 0.5), 
+		    0 0 250px rgba(46, 169, 103, 0.3);
+}
+	.glow-container3::before {
   mix-blend-mode: screen; /* Or 'multiply' depending on background */
 }
             }
@@ -729,7 +753,8 @@ Easily look up detailed report information on members or specific cases within y
                         
                         <div class="webImage" style="align-items: center!important;display: flex;">
                                         <div class="illustration flex2 items-center" ata-v-1b68bfcc>
-                                                                <img  src="assets/image/lookup_embed.png" alt="Lookup Embed" class="imgHomeAuto"></img> 
+																		<div class="glow-container">
+                                                                <img  src="assets/image/lookup_embed.png" alt="Lookup Embed" class="imgHomeAuto"></img></div> 
                                         </div>
                             </div>
                                         
