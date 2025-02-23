@@ -255,6 +255,23 @@ content: '';
     background: transparent;
     z-index: -1;
 }
+			.glow-container4 {
+  position: relative;
+  display: inline-block;
+}
+
+.glow-container4::before {
+content: '';
+    position: absolute;
+    top: 36%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    width: 84%;
+    height: 71%;
+    border-radius: 50%;
+    background: transparent;
+    z-index: -1;
+}
 	.glow-container {
   position: relative;
   display: inline-block;
@@ -337,6 +354,14 @@ content: '';
 		    0 0 250px rgba(46, 169, 103, 0.3);
 }
 	.glow-container3::before {
+  mix-blend-mode: screen; /* Or 'multiply' depending on background */
+}
+	.glow-container4::before {
+        box-shadow: 0 0 250px rgba(245, 166, 35, 0.8), 
+		    0 0 250px rgba(245, 166, 35, 0.5), 
+		    0 0 250px rgba(245, 166, 35, 0.3);
+}
+	.glow-container4::before {
   mix-blend-mode: screen; /* Or 'multiply' depending on background */
 }
             }
@@ -794,7 +819,8 @@ Easily look up detailed report information on members or specific cases within y
 						 <div class="scroll-element js-scroll fade-in-bottom">
                                         <div data-v-1b68bfcc="" class="grid gap-8 sm:gap-16 xl:gap-24 sm:grid-cols-2 max-w-screen-xl" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
                                                     <div data-v-1b68bfcc="" class="illustration flex items-center">
-                                                                <img data-v-1b68bfcc="" src="assets/image/configmenu2.png" alt="Configuration" class="imgHomeAuto"></img> 
+							    																		<div class="glow-container4">
+                                                                <img data-v-1b68bfcc="" src="assets/image/configmenu2.png" alt="Configuration" class="imgHomeAuto"></img></div> 
                                         </div>
                             
                             <div class="flex flex-col sm:justify-center mt-12 sm:mt-0 relative" data-v-1b68bfcc="">
