@@ -525,14 +525,39 @@ content: '';
     display: flex;
     align-items: center;
     gap: 40px;
-    max-width: 1200px;
+    max-width: 87%;
     margin: 2rem auto;
     padding: 2.5rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(
+    	90deg,
+    	rgba(226, 32, 45, 0.15) 0%,   /* 15% opacity */
+    	rgba(226, 32, 45, 0.15) 100%  /* 15% opacity */
+    );
+    border: 2px solid;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
-
+.advanced-cta-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Place it behind the content */
+  border: 2px solid transparent; /* Border thickness */
+  border-radius: 8px; /* Optional: Rounded corners */
+  background: linear-gradient(
+    90deg,
+    #E2202D 0%,    /* 100% opacity */
+    #E2202D 100%   /* 100% opacity */
+  ) border-box; /* Clip gradient to the border */
+  mask: 
+    linear-gradient(#fff 0 0) content-box, /* Hide inner area */
+    linear-gradient(#fff 0 0); /* Show border area */
+  mask-composite: exclude; /* Combine masks to leave only the border */
+}
+	
 .text-content {
     flex: 1;
     position: relative;
@@ -574,7 +599,7 @@ content: '';
 
 .floating-button-wrapper {
     position: absolute;
-    right: -100px;
+    right: 28vh;
     top: 50%;
     transform: translateY(-50%);
     width: 200px;
