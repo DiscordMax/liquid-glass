@@ -533,8 +533,7 @@ content: '';
     	rgba(226, 32, 45, 0.15) 0%,   /* 15% opacity */
     	rgba(226, 32, 45, 0.15) 100%  /* 15% opacity */
     );
-    border: 2px solid;
-    border-radius: 20px;
+    border-radius: 29px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 .advanced-cta-container::before {
@@ -546,7 +545,7 @@ content: '';
   bottom: 0;
   z-index: -1; /* Place it behind the content */
   border: 2px solid transparent; /* Border thickness */
-  border-radius: 8px; /* Optional: Rounded corners */
+  border-radius: 29px; /* Optional: Rounded corners */
   background: linear-gradient(
     90deg,
     #E2202D 0%,    /* 100% opacity */
@@ -576,17 +575,6 @@ content: '';
 
 .paragraph-group {
     position: relative;
-    padding-left: 30px;
-}
-
-.paragraph-group::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 3px;
-    background: linear-gradient(to bottom, #fff, transparent);
 }
 
 .feature-text {
@@ -1003,19 +991,18 @@ You can set up configurations fast through are simple config menu.
 	
 <div class="advanced-cta-container">
     <div class="text-content">
-        <h2 class="gradient-heading">Keep your server safe</h2>
+        <h2 class="tagText">Keep your server safe</h2>
         <div class="paragraph-group">
-            <p class="feature-text">Add Report Bot to your Discord server today to</p>
-            <p class="feature-text">empower your community through our</p>
-            <p class="feature-text">advanced report system!</p>
+            <p class="descText">Add Report Bot to your Discord server today to</p>
+            <p class="descText">empower your community through our</p>
+            <p class="descText">advanced report system!</p>
         </div>
     </div>
     
     <div class="floating-button-wrapper">
-        <button class="hover-3d-button">
+        <button3 class="button3 waves-effect waves-brown">
             Add to Server
-            <span class="button-backdrop"></span>
-        </button>
+        </button3>
     </div>
 </div>
             
