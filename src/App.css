@@ -6,7 +6,34 @@
     height: 40vmin;
     pointer-events: none;
 }
-
+.sidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(225, 45, 45, 0.5), rgb(23, 24, 27, 1));
+    filter: blur(5px);
+    /* Adjust blur intensity */
+    z-index: -1;
+    /* Ensures the background is behind the content */
+}
+.sidebar {
+    position: fixed;
+    /* The height of the navbar */
+    padding: 1.25rem !important;
+    width: 305px;
+    /* Adjust the width as necessary */
+    background-color: rgb(23, 24, 27, 0.25) !important;
+    ;
+    /* Sidebar background color */
+    z-index: 40;
+    height: 100%;
+    /* Below the navbar, but still above the content */
+    overflow-y: auto;
+    /* Scrollable if content overflows */
+}
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
