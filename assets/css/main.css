@@ -17,18 +17,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     justify-content: center!important;
     align-items: center!important;
 	}
-}	
+}
+
+.navFlex {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 header .navbar-sticky {
-    top: 20;
+    top: 20px;
     position: fixed!important;
     background: rgb(23, 24, 27, 0.25)!important;
     backdrop-filter: blur(46px)!important;
-    -webkit-backdrop-filter: blur(46px)!important;	
     background-color: var(--header-bg-color);
     -webkit-box-shadow: 0 0 25px rgb(0 0 0 / 25%);
     box-shadow: 0 0 25px rgb(0 0 0 / 25%);
     border-radius: 100px;
-    max-width: 80vh;
+    min-width: 80vh;
+}
+header {
+    display: flex;
+    justify-content: center;
 }
 .navbar {
     transition: all .5s ease-in-out!important;
@@ -49,12 +59,6 @@ header .navbar-sticky {
     backdrop-filter: blur(46px)!important;
     -webkit-backdrop-filter: blur(46px)!important;		
     background-color: transparent!important;
-}
-@media (max-width: 1199px) {
-    .navbar {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;	
-    }    
 }
 html {
     overflow-x: hidden;
