@@ -46,8 +46,8 @@ header .navbar-sticky {
     min-width: 80vh;
 }
 header {
-    display: flex;
-    justify-content: center;
+    display: flex!important;
+    justify-content: center!important;
 }
 .navbar {
     transition: all .5s ease-in-out!important;
