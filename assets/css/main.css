@@ -9,15 +9,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-@media (min-width: 1321px) {
+
 .navbar {
-    display: flex!important;
-    align-content: center!important;
-    flex-wrap: wrap!important;
-    justify-content: center!important;
-    align-items: center!important;
+    display: block!important;
 	}
-}
 
 .navFlex {
     display: flex;
