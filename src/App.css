@@ -1385,7 +1385,7 @@ p-main {
 .gdGZhQ {
     font-size: 14px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5)!important;
     padding-bottom: 8px;
     transition: color 175ms ease-out 0s;
 }
@@ -1393,7 +1393,7 @@ p-main {
 .hzBTNA {
     font-size: 14px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5)!important;
     padding-bottom: 8px;
     transition: color 175ms ease-out 0s;
 }
