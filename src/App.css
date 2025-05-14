@@ -1062,7 +1062,7 @@ ul {
 @media (max-width: 490px) {
     .Hero {
       padding-top: 9rem!important;      
-      min-height: 120vh!important;
+      min-height: 100vh!important;
     }
 }
 .Hero .HeroInner {
