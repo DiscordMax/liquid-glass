@@ -68,7 +68,7 @@ header {
     		min-width: 55vh!important;
 	}
 }
-@media (max-width: 490px) {
+@media (max-width: 540px) {
 	header .navbar-sticky {
     		min-width: 45vh!important;
 	}
