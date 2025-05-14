@@ -1108,6 +1108,7 @@ h1 {
 @media (max-width: 970px) {
     .Hero .HeroInner .HeroButtons {
         -webkit-box-orient: vertical;
+        margin-bottom: 3rem;
         -moz-box-orient: vertical;
         -o-box-orient: vertical;
         -webkit-flex-direction: column;
