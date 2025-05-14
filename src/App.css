@@ -1057,11 +1057,12 @@ ul {
     -webkit-justify-content: center;
     justify-content: center;
     padding-top: 30vh;
-    min-height: 100vh;
+    min-height: 100vh!important;
 }
 @media (max-width: 380px) {
     .Hero {
-      padding-top: 9rem!important;        
+      padding-top: 9rem!important;      
+      min-height: 100vh!important;
     }
 }
 .Hero .HeroInner {
