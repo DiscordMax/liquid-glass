@@ -62,6 +62,16 @@ header {
 		height: 120vh!important;
 	}
 }
+@media (max-width: 639px) {
+	.home2 {
+		height: 120vh!important;
+	}
+}
+@media (max-width: 639px) {
+	.home3 {
+		height: 120vh!important;
+	}
+}
 @media (max-width: 800px) {
 	header .navbar-sticky {
     		min-width: 65vh!important;
