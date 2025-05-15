@@ -76,6 +76,25 @@ header {
 	}
 }
 
+@media (max-width: 1149px) {
+	.home1 {
+    padding-left: 2.5rem!important;
+    padding-right: 2.5rem!important;
+	}
+}
+@media (max-width: 1149px) {
+	.home2 {
+    padding-left: 2.5rem!important;
+    padding-right: 2.5rem!important;
+	}
+}
+@media (max-width: 1149px) {
+	.home3 {
+    padding-left: 2.5rem!important;
+    padding-right: 2.5rem!important;
+	}
+}
+	
 
 @media (max-width: 972px) {
 	.home1 {
