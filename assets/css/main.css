@@ -57,6 +57,25 @@ header {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;	
 }
+@media (max-width: 1700px) {
+	.home1 {
+    padding-left: 3.5rem!important;
+    padding-right: 3.5rem!important;
+	}
+}
+@media (max-width: 1700px) {
+	.home2 {
+    padding-left: 3.5rem!important;
+    padding-right: 3.5rem!important;
+	}
+}
+@media (max-width: 1700px) {
+	.home3 {
+    padding-left: 3.5rem!important;
+    padding-right: 3.5rem!important;
+	}
+}
+	
 @media (max-width: 1500px) {
 	.home1 {
     padding-left: 3.5rem!important;
