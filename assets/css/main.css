@@ -57,7 +57,11 @@ header {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;	
 }
-
+@media (max-width: 639px) {
+	.home1 {
+		height: 120vh!important;
+	}
+}
 @media (max-width: 800px) {
 	header .navbar-sticky {
     		min-width: 65vh!important;
