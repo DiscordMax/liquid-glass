@@ -57,17 +57,17 @@ header {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;	
 }
-@media (max-width: 639px) {
+@media (max-width: 693px) {
 	.home1 {
 		height: 120vh!important;
 	}
 }
-@media (max-width: 639px) {
+@media (max-width: 693px) {
 	.home2 {
 		height: 120vh!important;
 	}
 }
-@media (max-width: 639px) {
+@media (max-width: 693px) {
 	.home3 {
 		height: 120vh!important;
 	}
