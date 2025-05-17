@@ -257,25 +257,31 @@
 		    background: transparent;
 	    }
 .page-wrapper {
-    position: relative;
+  position: relative;
 }
 
-.glow-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120vh; /* Tall enough to cover both crojIh and flow into section */
-    background: radial-gradient(
-        75.63% 95.02% at -10% 76%,
-        rgba(226, 45, 45, 0.25) 30%,
-        rgba(0, 0, 0, 0) 100%
-    );
-    pointer-events: none;
-    z-index: 5; /* Below crojIh's content but above the page background */
+.crojIh {
+  position: relative;
+  z-index: 10;
+  height: 70vh;
+  background-color: #0a0a0a;
 }
-
-
+.glow-between {
+  position: absolute;
+  top: 60vh;
+  left: -10%;
+  width: 120%;
+  height: 120vh;
+  background: radial-gradient(
+    circle,
+    rgba(226, 45, 45, 0.25) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-radius: 50%;
+  z-index: 5;
+  pointer-events: none;
+}
+	
 .main-content {
     position: relative;
     z-index: 1;
@@ -503,7 +509,6 @@
     </header>
      <!-- START OF PAGE -->
 	  <div class="page-wrapper">
-		      <div class="glow-layer"></div>
                <div class="sc-1659snh-0 crojIh">
       
             <div class="fz1i6o-1 Row hoRgHK">
@@ -513,7 +518,8 @@
             </div>
                            </div>
               </div>
-    
+      <div class="glow-between"></div>
+
     <div class="section" style="width: 84%;max-width: 950px;">
 <p>Last updated: May 16, 2025</p>
 <h2 class="termHeader" id="agreement-to-terms">Agreement to Terms <a class="term2Link" href="#agreement-to-terms" title="Direct link to heading">#</a></h2>
