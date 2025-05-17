@@ -256,6 +256,22 @@
 		height: 70vh;
 		    background: transparent;
 	    }
+	.crojIh::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        75.63% 95.02% at -10% 76%,
+        rgba(226, 45, 45, 0.25) 30%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    z-index: -1; /* stays behind the content */
+    pointer-events: none;
+    transform: translate(-30%, -10%); /* Push it left and down to control how it 'spills' */
+}
 	.background-glow {
     position: fixed;
     top: 0;
