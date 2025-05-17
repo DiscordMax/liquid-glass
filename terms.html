@@ -256,36 +256,25 @@
 		height: 70vh;
 		    background: transparent;
 	    }
-	.crojIh::before {
-    content: "";
+.page-wrapper {
+    position: relative;
+}
+
+.glow-layer {
     position: absolute;
     top: 0;
     left: 0;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(
-        75.63% 95.02% at -10% 76%,
-        rgba(226, 45, 45, 0.25) 30%,
-        rgba(0, 0, 0, 0) 100%
-    );
-    z-index: -1; /* stays behind the content */
-    pointer-events: none;
-    transform: translate(-30%, -10%); /* Push it left and down to control how it 'spills' */
-}
-	.background-glow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 120vh; /* Tall enough to cover both crojIh and flow into section */
     background: radial-gradient(
         75.63% 95.02% at -10% 76%,
         rgba(226, 45, 45, 0.25) 30%,
         rgba(0, 0, 0, 0) 100%
     );
     pointer-events: none;
-    z-index: 0;
+    z-index: 5; /* Below crojIh's content but above the page background */
 }
+
 
 .main-content {
     position: relative;
@@ -513,6 +502,8 @@
                           
     </header>
      <!-- START OF PAGE -->
+	  <div class="page-wrapper">
+		      <div class="glow-layer"></div>
                <div class="sc-1659snh-0 crojIh">
       
             <div class="fz1i6o-1 Row hoRgHK">
@@ -599,7 +590,7 @@
 </li>
 </ul>
               </div>
-              
+	  </div>
 <!-- END OF PAGE -->
             <!-- Modal [responsive menu] -->
   <div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
