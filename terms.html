@@ -259,29 +259,26 @@
 .page-wrapper {
   position: relative;
 }
-
-.crojIh {
+.glow-wrapper {
   position: relative;
-  z-index: 10;
-  height: 70vh;
-  background-color: #0a0a0a;
+  overflow: visible; /* Important: allows glow to extend downward */
+  z-index: 1; /* Adjust if needed to sit below nav/header if separate */
 }
-.glow-between {
+
+.glow-wrapper::before {
+  content: "";
   position: absolute;
-  top: 60vh;
-  left: -10%;
-  width: 120%;
-  height: 120vh;
-  background: radial-gradient(
-    circle,
-    rgba(226, 45, 45, 0.25) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  border-radius: 50%;
-  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%; /* Makes the glow spill into the section below */
+  border-radius: 50%; /* Optional: round glow shape */
+  box-shadow:
+    0 0 150px 60px rgba(226, 45, 45, 0.3),
+    0 0 250px 80px rgba(226, 45, 45, 0.15);
+  z-index: -1;
   pointer-events: none;
 }
-	
 .main-content {
     position: relative;
     z-index: 1;
@@ -509,6 +506,7 @@
     </header>
      <!-- START OF PAGE -->
 	  <div class="page-wrapper">
+		    <div class="glow-wrapper"> <!-- This is where we add the glow -->
                <div class="sc-1659snh-0 crojIh">
       
             <div class="fz1i6o-1 Row hoRgHK">
@@ -518,7 +516,6 @@
             </div>
                            </div>
               </div>
-      <div class="glow-between"></div>
 
     <div class="section" style="width: 84%;max-width: 950px;">
 <p>Last updated: May 16, 2025</p>
