@@ -277,6 +277,21 @@
     z-index: -1;
     pointer-events: none;
 }
+	
+@media (max-width: 972px){
+	.glow-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 10vh;
+    left: -25%;
+    width: 25%;
+    height: 13%;
+    border-radius: 50%;
+    box-shadow: 0 0 150px 15px rgba(226, 45, 45, 0.3), 0 0 250px 303px rgba(226, 45, 45, 0.15);
+    z-index: -1;
+    pointer-events: none;
+	}
+	  }
 .main-content {
     position: relative;
     z-index: 1;
