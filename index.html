@@ -594,17 +594,28 @@ addReport{
       height: 60px;
       padding: 0 24px;
       border-radius: 9999px;
-      background: rgba(255, 255, 255, 0.08);
-      -webkit-backdrop-filter: url(#liquidGlass) blur(20px);
-      backdrop-filter: url(#liquidGlass) blur(20px);
-      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255, 255, 255, 0.04);
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.2);
       display: flex;
       align-items: center;
-      justify-content: space-around;
-      font-family: sans-serif;
+      justify-content: space-between;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       color: white;
       position: fixed;
-      box-shadow: 0 0 10px rgba(255,255,255,0.05), inset 0 0 8px rgba(255,255,255,0.05);
+      box-shadow: inset 0 0 0.5px rgba(255,255,255,0.4), inset 0 0 12px rgba(255,255,255,0.05), 0 4px 20px rgba(0,0,0,0.2);
+      isolation: isolate;
+    }
+
+    .glass::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      z-index: -1;
+      backdrop-filter: url(#liquidGlass);
+      -webkit-backdrop-filter: url(#liquidGlass);
     }
 
     .glass svg {
@@ -1304,30 +1315,32 @@ main2 {
                                 </div>
                             </div>
                         </div>
-				<svg width="0" height="0">
+				   
+<svg width="0" height="0">
   <defs>
     <filter id="liquidGlass" x="-20%" y="-20%" width="140%" height="140%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="1" seed="9" result="turbulence"/>
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" seed="5" result="turbulence"/>
 
       <feComponentTransfer in="turbulence" result="mapped">
-        <feFuncR type="gamma" offset="0.5" exponent="10" amplitude="1"/>
-        <feFuncG type="gamma" offset="0" exponent="1" amplitude="0"/>
-        <feFuncB type="gamma" offset="0.5" exponent="1" amplitude="0"/>
+        <feFuncR type="gamma" offset="0.4" exponent="4" amplitude="1"/>
+        <feFuncG type="gamma" offset="0.2" exponent="2" amplitude="1"/>
+        <feFuncB type="gamma" offset="0.5" exponent="3" amplitude="1"/>
       </feComponentTransfer>
 
-      <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
+      <feGaussianBlur in="mapped" stdDeviation="4" result="softMap" />
 
-      <feSpecularLighting in="softMap" surfaceScale="5" specularConstant="1" specularExponent="1" lighting-color="white" result="specLight">
-        <fePointLight x="-200" y="-200" z="300" />
+      <feSpecularLighting in="softMap" surfaceScale="3" specularConstant="1" specularExponent="20" lighting-color="white" result="specLight">
+        <fePointLight x="-100" y="-100" z="200" />
       </feSpecularLighting>
 
-      <feComposite in="specLight" in2="SourceGraphic" operator="arithmetic"
+      <feComposite in="softMap" in2="specLight" operator="arithmetic"
                    k1="0" k2="1" k3="1" k4="0" result="litImage"/>
 
-      <feDisplacementMap in="SourceGraphic" in2="softMap" scale="30" xChannelSelector="R" yChannelSelector="G" />
+      <feDisplacementMap in="SourceGraphic" in2="litImage" scale="25" xChannelSelector="R" yChannelSelector="G" />
     </filter>
   </defs>
 </svg>
+
 <div class="glass">
   <span>Liquid Glass</span>
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
